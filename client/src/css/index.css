@@ -1,0 +1,10 @@
+/* Open Sans Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-slate-800 dark:bg-slate-800 dark:text-slate-100;
+}
