@@ -1,5 +1,5 @@
 import React from "react";
-import Choice from "../Components/Choice";
+import Option from "./Option";
 
 export default class Choices extends React.Component {
   constructor(props) {
@@ -29,7 +29,7 @@ export default class Choices extends React.Component {
       <div className="flex w-full flex-col gap-2">
         {choices.map((choice, index) => {
           return (
-            <Choice
+            <Option
               key={index}
               color={index % 4}
               selected={choice.selected}
@@ -38,7 +38,7 @@ export default class Choices extends React.Component {
               onClick={() => this.handleClick(index)}
             >
               {choice.text}
-            </Choice>
+            </Option>
           );
         })}
       </div>

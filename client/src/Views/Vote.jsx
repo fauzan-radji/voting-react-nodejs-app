@@ -1,4 +1,4 @@
-import Choices from "../Components/Choices";
+import Select from "../Components/Select";
 
 const choices = [
   {
@@ -23,7 +23,7 @@ export default function Vote() {
 
   return (
     <div className="flex flex-col items-center gap-2">
-      <Choices choices={choices} total={total} />
+      <Select choices={choices} total={total} />
       <button className="rounded-lg bg-purple-700 px-4 py-2 hover:bg-purple-800 active:bg-purple-900">
         Vote
       </button>

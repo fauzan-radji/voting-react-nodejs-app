@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 const colors = [
   {
     bg: "bg-red-700",
